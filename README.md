@@ -221,6 +221,7 @@ Ce projet a été réalisé dans le cadre de la **constitution de mon portfolio 
 ## 📸 Aperçu du dashboard
 
 [👉 Voir la Visualisation des données dans Power BI](https://drive.google.com/file/d/1MX1j0F1N3KRFiGhjGmEA4NJaPcnDdrN_/view?usp=drive_link).
+
 [👉 Voir le fichier PDF inclus dans le repository](https://github.com/pigaloup/Projet-E-commerce-Analytics-Power-BI/blob/main/e-commerce.pdf).  
 
 ---
@@ -230,6 +231,7 @@ Ce projet a été réalisé dans le cadre de la **constitution de mon portfolio 
 Si vous souhaitez échanger sur ce projet ou discuter d'opportunités professionnelles :
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ablayegaloupdiop/)
+
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:elhadjiablayegaloupdiop@gmail.com)
 
 ---
