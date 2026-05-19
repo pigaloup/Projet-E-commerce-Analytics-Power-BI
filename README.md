@@ -174,7 +174,11 @@ Ce projet a été réalisé dans le cadre de la **constitution de mon portfolio 
 - Storytelling data orienté décision
 
 ---
+## 📸 Aperçu du dashboard
+
 [👉 Voir la Visualisation des données dans Power BI](https://drive.google.com/file/d/1MX1j0F1N3KRFiGhjGmEA4NJaPcnDdrN_/view?usp=drive_link).
+[👉 Voir le fichier PDF inclus dans le repository](https://github.com/pigaloup/Projet-E-commerce-Analytics-Power-BI/blob/main/e-commerce.pdf).  
+
 ---
 
 ## 📬 Contact
