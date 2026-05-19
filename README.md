@@ -49,15 +49,19 @@ Le modèle de données suit une **modélisation en étoile (Star Schema)**, opti
 **🔹 Tables de dimensions**
 
 -`inventory_items` : informations sur les stocks et les produits disponibles
+
  Champs principaux : *id, product_id, created_at, sold_at, cost, product_category,product_name, product_brand, product_retail_price,product_department, product_sku,roduct_distribution_center_id*
  
 -`orders` : informations sur les commandes
+
  Champs principaux : *order_id, user_id, status, gender, created_at,returned_at, shipped_at, delivered_at, num_of_item*
  
 -`products` : catalogue produits
+
  Champs principaux : *id, cost, category, name, brand, retail_price,department, sku, distribution_center_id*
  
 -`users` : informations clients
+
  Champs principaux : *id, first_name, last_name, email, age, gender,state, address, postal_code, city, country,latitude, longitude, traffic_source, created_at*
 
 ### 🔗 Relations (Modélisation en étoile)
