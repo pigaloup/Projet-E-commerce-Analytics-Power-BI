@@ -174,6 +174,8 @@ Ce projet a été réalisé dans le cadre de la **constitution de mon portfolio 
 - Storytelling data orienté décision
 
 ---
+[👉 Voir la Visualisation des données dans Power BI](https://github.com/pigaloup/Conception-et-Impl-mentation-d-un-Entrep-t-de-Donn-es-pour-MacroBus/blob/main/Doc/Projet1_MacroBus.pbix).
+---
 
 ## 📬 Contact
 
