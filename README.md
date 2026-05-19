@@ -1,4 +1,4 @@
-<img width="121" height="30" alt="image" src="https://github.com/user-attachments/assets/1dd0f546-ee7f-4f6c-92f6-d7f091844b91" /><img width="121" height="30" alt="image" src="https://github.com/user-attachments/assets/4b05a5d9-8346-471d-a9bc-d4a17da80271" /># 📊 E-Commerce Intelligence Dashboard — Power BI
+# 📊 E-Commerce Intelligence Dashboard — Power BI
 
 ![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
 ![Data Analysis](https://img.shields.io/badge/Data%20Analysis-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white)
