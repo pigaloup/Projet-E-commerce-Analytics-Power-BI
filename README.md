@@ -34,6 +34,32 @@ Il s'adresse à des profils décisionnels (Direction Commerciale, Marketing, Sup
 ```
 
 ---
+## 🧠 Modélisation des données
+
+Le modèle de données suit une **modélisation en étoile (Star Schema)**, optimisée pour la performance et l’analyse.
+
+![Visualisation des données2](https://github.com/pigaloup/Projet-E-commerce-Analytics-Power-BI/blob/main/DATA/Sch%C3%A9ma%20en%20Etoile.PNG).
+
+### ⭐ Structure du modèle
+
+- **Table de faits :**
+  - `sales data-set` (contient les ventes : *Weekly_Sales, Date, Dept, Store, IsHoliday*)
+
+- **Tables de dimensions :**
+  - `features data set` (variables externes : température, chômage, fuel price, markdown…)
+  - `stores data-set` (caractéristiques des magasins :store, type, taille)
+
+### 🔗 Relations
+
+- `features data set` est reliée à `sales data-set` via la colonne **StoreDateID** *(clé créée pour assurer la jointure temporelle et par magasin)*  
+- `sales data-set` est reliée à `stores data-set` via la colonne **Store**
+
+👉 Cette structure permet :
+- une meilleure performance des requêtes
+- une analyse multidimensionnelle efficace
+- une simplification des mesures DAX
+
+---
 
 ## 📌 KPIs Principaux
 
