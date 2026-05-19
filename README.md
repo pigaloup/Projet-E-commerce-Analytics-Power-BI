@@ -42,14 +42,19 @@ Le modèle de données suit une **modélisation en étoile (Star Schema)**, opti
 
 ### ⭐ Structure du modèle
 
-- **Table de faits :**
-  - `order_items` (contient les ventes : *id,order_id,user_id,product_id,inventory_item_id,status,created_at,shipped_at,delivered_at,returned_at,sale_price*)
-
-- **Tables de dimensions :**
-  - `inventory_items` (id,product_id,created_at,sold_at,cost,product_category, product_name,product_brand,product_retail_price,product_department, product_sku,product_distribution_center_id)
-  - `orders` (order_id,user_id,status,gender,created_at,returned_at,shipped_at,delivered_at,num_of_item)
-  - `products` (id,cost,category,name,brand,retail_price,department,sku,distribution_center_id)
-  - `users` (id,first_name,last_name,email,age,gender,state,street_address,postal_code,city,country,latitude,longitude,traffic_source,created_at)
+**🔹 Table de faits**
+- order_items : contient les transactions de vente
+  Champs principaux :*id, order_id, user_id, product_id, inventory_item_id, status,created_at, shipped_at, delivered_at, returned_at, sale_price*
+  
+**🔹 Tables de dimensions**
+-`inventory_items` : informations sur les stocks et les produits disponibles
+ Champs principaux : *id, product_id, created_at, sold_at, cost, product_category,product_name, product_brand, product_retail_price,product_department, product_sku,roduct_distribution_center_id*
+-`orders` : informations sur les commandes
+ Champs principaux : *order_id, user_id, status, gender, created_at,returned_at, shipped_at, delivered_at, num_of_item*
+-`products` : catalogue produits
+ Champs principaux : *id, cost, category, name, brand, retail_price,department, sku, distribution_center_id*
+-`users` : informations clients
+ Champs principaux : *id, first_name, last_name, email, age, gender,state, address, postal_code, city, country,latitude, longitude, traffic_source, created_at*
 
 ### 🔗 Relations (Modélisation en étoile)
 Le modèle de données suit une modélisation en étoile, où la table de faits **order_items** est au centre, reliée à plusieurs tables de dimensions via des clés étrangères.
