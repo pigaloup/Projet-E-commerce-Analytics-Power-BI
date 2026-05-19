@@ -1,4 +1,4 @@
-# 📊 E-Commerce Intelligence Dashboard — Power BI
+<img width="121" height="30" alt="image" src="https://github.com/user-attachments/assets/1dd0f546-ee7f-4f6c-92f6-d7f091844b91" /><img width="121" height="30" alt="image" src="https://github.com/user-attachments/assets/4b05a5d9-8346-471d-a9bc-d4a17da80271" /># 📊 E-Commerce Intelligence Dashboard — Power BI
 
 ![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
 ![Data Analysis](https://img.shields.io/badge/Data%20Analysis-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white)
@@ -43,16 +43,21 @@ Le modèle de données suit une **modélisation en étoile (Star Schema)**, opti
 ### ⭐ Structure du modèle
 
 - **Table de faits :**
-  - `sales data-set` (contient les ventes : *Weekly_Sales, Date, Dept, Store, IsHoliday*)
+  - `order_items` (contient les ventes : *id,order_id,user_id,product_id,inventory_item_id,status,created_at,shipped_at,delivered_at,returned_at,sale_price*)
 
 - **Tables de dimensions :**
-  - `features data set` (variables externes : température, chômage, fuel price, markdown…)
-  - `stores data-set` (caractéristiques des magasins :store, type, taille)
+  - `inventory_items` (id,product_id,created_at,sold_at,cost,product_category, product_name,product_brand,product_retail_price,product_department, product_sku,product_distribution_center_id)
+  - `orders` (order_id,user_id,status,gender,created_at,returned_at,shipped_at,delivered_at,num_of_item)
+  - `products` (id,cost,category,name,brand,retail_price,department,sku,distribution_center_id)
+  - `users` (id,first_name,last_name,email,age,gender,state,street_address,postal_code,city,country,latitude,longitude,traffic_source,created_at)
 
-### 🔗 Relations
-
-- `features data set` est reliée à `sales data-set` via la colonne **StoreDateID** *(clé créée pour assurer la jointure temporelle et par magasin)*  
-- `sales data-set` est reliée à `stores data-set` via la colonne **Store**
+### 🔗 Relations (Modélisation en étoile)
+Le modèle de données suit une modélisation en étoile, où la table de faits order_items est au centre, reliée à plusieurs tables de dimensions via des clés étrangères.
+Les relations sont définies comme suit :
+- order_items est reliée à inventory_items via la colonne **inventory_item_id**
+- order_items est reliée à orders via la colonne **order_id**
+- order_items est reliée à products via la colonne **product_id**
+- order_items est reliée à users via la colonne **user_id**
 
 👉 Cette structure permet :
 - une meilleure performance des requêtes
