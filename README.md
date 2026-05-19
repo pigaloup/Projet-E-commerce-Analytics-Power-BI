@@ -52,7 +52,7 @@ Le modèle de données suit une **modélisation en étoile (Star Schema)**, opti
   - `users` (id,first_name,last_name,email,age,gender,state,street_address,postal_code,city,country,latitude,longitude,traffic_source,created_at)
 
 ### 🔗 Relations (Modélisation en étoile)
-Le modèle de données suit une modélisation en étoile, où la table de faits order_items est au centre, reliée à plusieurs tables de dimensions via des clés étrangères.
+Le modèle de données suit une modélisation en étoile, où la table de faits **order_items** est au centre, reliée à plusieurs tables de dimensions via des clés étrangères.
 Les relations sont définies comme suit :
 - order_items est reliée à inventory_items via la colonne **inventory_item_id**
 - order_items est reliée à orders via la colonne **order_id**
